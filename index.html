@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <title>Therese Hedeblom</title>
+</head>
+<body>
+    <audio id="cardsound">
+        <source src="sounds/zapsplat_leisure_playing_card_single_turn_over_on_table_004_20476.mp3">
+    </audio>
+    <audio id="bellSound">
+        <source src="sounds/zapsplat_multimedia_game_sound_bell_synth_twinkle_positive_tone_004_40493.mp3">
+    </audio>
+    <audio id="ulost">
+        <source src="sounds/zapsplat_multimedia_game_sound_synth_bright_pluck_digital_negative_002_40724.mp3">
+    </audio>
+    <audio id="winningSound">
+        <source src="sounds/aaj_0164_SmllCrwdClppng2.mp3">
+    </audio>
+
+    <p>Challenge yourself by pressing GO!</p></br>
+    <h3 class="TimeText">You have: <span id="timer">0  </span> seconds remaining!</h3>
+    <button id="Start" onclick="start_timer()">Go!</button>
+
+    <section id="memory_board">
+        <div class="myPopup" id="POP">
+            <img src="images/confetti-25.gif" width="640" height="640" alt="Konfetti" />
+        </div>
+        <div class="GameOver" id="popup">
+            <img src="images/gameover.gif" width="640" height="640" alt="gameOver" />
+        </div>
+        <h1 class="Page_title">Memory</h1>
+        <div class="card" data-namematch="bird">
+            <img class="card_front" src="images/bird-1232416_1280.png" alt="bird" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+        <div class="card" data-namematch="bird">
+            <img class="card_front" src="images/bird-1232416_1280.png" alt="bird" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+        <div class="card" data-namematch="cake">
+            <img class="card_front" src="images/birtdaycake.png" alt="cake" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+        <div class="card" data-namematch="cake">
+            <img class="card_front" src="images/birtdaycake.png" alt="cake" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+        <div class="card" data-namematch="popcat">
+            <img class="card_front" src="images/cat.png" alt="popcat" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+        <div class="card" data-namematch="popcat">
+            <img class="card_front" src="images/cat.png" alt="popcat" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+        <div class="card" data-namematch="elephant">
+            <img class="card_front" src="images/elephant.png" alt="elephant" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+        <div class="card" data-namematch="elephant">
+            <img class="card_front" src="images/elephant.png" alt="elephant" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+        <div class="card" data-namematch="flower">
+            <img class="card_front" src="images/flower-marigolds-3192686_1920.png" alt="Flower" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+        <div class="card" data-namematch="flower">
+            <img class="card_front" src="images/flower-marigolds-3192686_1920.png" alt="flower" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+        <div class="card" data-namematch="musicNote">
+            <img class="card_front" src="images/music-note-1275650_1280.png" alt="musicNote" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+        <div class="card" data-namematch="musicNote">
+            <img class="card_front" src="images/music-note-1275650_1280.png" alt="musicNote" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+        <div class="card" data-namematch="earthGlobe">
+            <img class="card_front" src="images/the-earth-1179212_1280.png" alt="earthGlobe" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+        <div class="card" data-namematch="earthGlobe">
+            <img class="card_front" src="images/the-earth-1179212_1280.png" alt="earthGlobe" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+        <div class="card" data-namematch="Bear">
+            <img class="card_front" src="images/png-2629072_1280.png" alt="Bear" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+        <div class="card" data-namematch="Bear">
+            <img class="card_front" src="images/png-2629072_1280.png" alt="Bear" />
+            <img class="card_back" src="images/explosion pictures_287050.png" alt="Explotion" />
+        </div>
+    </section>
+
+    <button id="play" onclick="playAgain()">Play again</button>
+
+    <script src="app1.js">
+
+    </script>
+
+</body>
+</html>
